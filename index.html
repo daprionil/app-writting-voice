@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Speech Recognition</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="flex items-center justify-center bg-red-500 h-screen w-screen">
+        <div class="mx-2 ctn-form shadow-2xl max-w-xl w-full bg-gray-200 rounded-md p-3">
+            <div class="content">
+                <div class="title text-center text-2xl">
+                    <p class="border-b border-gray-500 pb-2">¡¡ Escribe con tu voz !!</p>
+                </div>
+                <div class="input-text mt-4">
+                    <div class="text-title text-center my-2 ">
+                        <p class="bg-blue-500 text-white font-semibold p-2 rounded-full" id="panelView">Aqui verás tu texto</p>
+                    </div>
+                    <div class="input relative">
+                        <input type="text" class="w-full p-2 text-md rounded-md outline-none" placeholder="Tu texto" readonly name="resultSpeech" id="resultSpeech">
+                        <button id="clearResult" class="outline-none focus:outline-none bg-red-500 transform -translate-y-1/2 px-2 shadow-2xl font-bold text-xl text-white absolute right-1 top-1/2 rounded-full" title="Eliminar Todo El Texto">X</button>
+                    </div>
+                    
+                </div>
+                <div class="btns text-center mt-5">
+                    <button id="startSpeech" class="outline-none bg-blue-600 transition duration-200 rounded-md py-1 px-3 text-white font-semibold text-xl max-w-xs w-full">Escuchar</button>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
